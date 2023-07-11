@@ -26,11 +26,15 @@ public class User {
 	
 	public static void main(String[] args) {
 		
+		
+		
+		
+		
+		
+		//Assigning values using parameters
 		User acct1 = new User("Naresh", "Naresh@valid" , "naresh@gmail.com" );
         System.out.println(acct1.name + "-" + acct1.password + "-" + acct1.email);
         
-		
-		
 		
 		
 	}
