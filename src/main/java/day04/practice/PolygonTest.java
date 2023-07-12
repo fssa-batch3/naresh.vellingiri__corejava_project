@@ -16,7 +16,7 @@ public class PolygonTest {
 			System.out.println(ratt.circumference());
 			
 			
-;			
+			
 			
 		} catch (Exception e) {
 			e.printStackTrace();
