@@ -32,11 +32,11 @@ public class dfgh {
     }
 }
 
-class Task {
+class Task1 {
     private String description;
     private boolean isCompleted;
 
-    public Task(String description) {
+    public Task1(String description) {
         this.description = description;
         this.isCompleted = false;
     }
