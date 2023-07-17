@@ -64,7 +64,7 @@ public class HashCodeEqualsDemo {
         empList.add(emp2);
         System.out.println("ArrayList size:" + empList.size());
  
-        HashSet<Employee> setOfEmps = new HashSet<>();
+        HashSet<Employee> setOfEmps = new HashSet<Employee>();
         setOfEmps.add(emp1);
         setOfEmps.add(emp2);
  

@@ -2,7 +2,6 @@ package day05.practice;
 
 public class AxisATM implements ATM{
 
-	@Override
 	public boolean deposit(Account account, double amount) {
 		if(amount > 0) {
 			double currentBalance = account.getBalance();
@@ -15,7 +14,6 @@ public class AxisATM implements ATM{
 		}
 	}
 
-	@Override
 	public boolean withdraw(Account account, double amount) throws Exception {
 		if(account.getBalance() < 5000) {
 			throw new IllegalArgumentException("The minimum balance should be 5000.");
@@ -27,7 +25,6 @@ public class AxisATM implements ATM{
 		}
 	}
 
-	@Override
 	public double getBalance() {
 		return this.getBalance();
 	}

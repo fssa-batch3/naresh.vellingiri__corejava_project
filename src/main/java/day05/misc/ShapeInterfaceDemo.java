@@ -10,12 +10,10 @@ interface Boundary {
 
 class Rectangle3 implements ShapeInf, Boundary {
 	
-	@Override
 	public void draw() {
 		System.out.println("prathiush rectangle draw");
 	}
 
-	@Override
 	public void calculateBoundary() {
 		System.out.println("prathiush rectangle Boundary");
 		
@@ -23,7 +21,7 @@ class Rectangle3 implements ShapeInf, Boundary {
 }
 
 class Square2 implements ShapeInf {
-	@Override
+	
 	public void draw() {
 		System.out.println("prathiush square draw");
 	}
