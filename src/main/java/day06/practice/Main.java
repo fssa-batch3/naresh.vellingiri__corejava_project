@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
-        ArrayList<Task> taskList = new ArrayList<Task>();
+        ArrayList<Task> taskList = new ArrayList<>();
 
         // Adding tasks to the list
         taskList.add(new Task("Complete assignment"));
