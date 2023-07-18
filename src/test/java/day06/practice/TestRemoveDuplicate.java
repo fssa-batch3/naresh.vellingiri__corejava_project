@@ -1,6 +1,8 @@
 package day06.practice;
 
 
+import static org.junit.Assert.assertEquals;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -18,7 +20,7 @@ public class TestRemoveDuplicate {
 		cityList.add("Mumbai");
 		cityList.add("Chennai");
 		
-		Assertions.assertTrue(RemoveDuplicate.myArray(cityList));	
+		Assertions.assertTrue(RemoveDuplicates.myArray(cityList));	
 	}
 	
 	@Test
