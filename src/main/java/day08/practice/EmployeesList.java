@@ -7,7 +7,7 @@ public class EmployeesList {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int count = 0;
-		int num = 3;
+		int num = 5;
 		HashMap<String, ArrayList<String>> countMap = new HashMap<String, ArrayList<String>>();
 		System.out.println("Enter min " + num + " details :");
 		while (count < num) {
@@ -38,6 +38,7 @@ public class EmployeesList {
 			count++;
 		}
 		System.out.println(countMap.keySet());
+		
 		for (String n : countMap.keySet()) {
 			System.out.println(n + " : " + countMap.get(n));
 		}
