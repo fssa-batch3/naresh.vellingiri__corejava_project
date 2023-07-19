@@ -1,53 +1,42 @@
 package day06.practice;
 
 import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.List;
 
 public class RemoveDuplicates {
 
-	public static boolean myArray(List<String> cityList) throws IllegalArgumentException {
+//	method to remove duplicates from the method
+	public static List<String> removeDuplicates(List<String> cityList) throws IllegalArgumentException {
 
-		if (cityList == null) {
-			throw new IllegalArgumentException("ArrayList Cannot be Null");
+//		if the array list 
+		if (cityList == null || cityList.size() == 0) {
+
+			throw new IllegalArgumentException("City list cannot be null or empty");
 		}
+ 
+//		creating new array list to store the unique city names 
 
-		List<String> output = new ArrayList<String>();
+		List<String> newList = new ArrayList<String>();
+ 
+		for (String element : cityList) {
 
-		for (int i = 0; i < cityList.size(); i++) {
+			
+			if (!newList.contains(element)) {
 
-			int ListCount = 0;
-
-			for (int j = 0; j < output.size(); j++) {
-
-				if (cityList.get(i).equals(output.get(j))) {
-					ListCount += 1;
-
-				}
-				
-			}
-
-			if (ListCount < 1) {
-				output.add(cityList.get(i));
+				newList.add(element);
 			}
 		}
-		
-		return true;
+
+//		if there is no duplicates elements in the array throw new error
+
+		if (newList.size() == cityList.size()) {
+
+			throw new IllegalArgumentException("No duplicates found");
+		}
+
+		return newList;
 
 	}
 
-	public static void main(String[] args) {
-		List<String> cityList = new ArrayList<String>();
-		cityList.add("Chennai");
-		cityList.add("Bangalore");
-		cityList.add("Mumbai");
-		cityList.add("Mumbai");
-
-		List<String> uniqueCityList = new ArrayList<>(new HashSet<>(cityList));
-		for (String city : uniqueCityList) {
-			System.out.println(city);
-		}
-
-	}
+	
 }
-

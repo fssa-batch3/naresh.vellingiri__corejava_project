@@ -19,7 +19,7 @@ public class CommaSeparatedNameHashMap {
 
 	public static Map<String, Integer> countNames(String[] namesArray) {
 		
-		Map<String, Integer> nameMap = new TreeMap<>();
+		Map<String, Integer> nameMap = new HashMap<>();
 
 		for (String name : namesArray) {
 			nameMap.put(name, nameMap.getOrDefault(name, 0) + 1);

@@ -1,4 +1,4 @@
-package day09.solved;
+package day10.practice;
 
 import java.util.Scanner;
 import java.util.regex.Matcher;
@@ -50,7 +50,7 @@ class EmailValidator {
 		
 	}
 }
-public class CollectionSortingDemo {
+public class EmailExceptionDemo {
 	public static void main(String[] args) {
 		
 		Scanner scan=new Scanner(System.in);
