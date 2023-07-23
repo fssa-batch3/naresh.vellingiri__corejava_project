@@ -7,7 +7,7 @@ public class TestInvalidEmailValidation {
 	@Test
 
 	public void testValidEmail() {
-		String email="sandeep@gmail.com";
+		String email="naresh@gmail.com";
 		try {
 		boolean vaild=	EmailValidator.isValidEmail(email);
 		Assertions.assertTrue(vaild);
@@ -25,7 +25,7 @@ public class TestInvalidEmailValidation {
 	public void testInValidEmail() {
 		
 		
-		String email="sandeep";
+		String email="naresh";
 		try {
 		boolean vaild=	EmailValidator.isValidEmail(email);
 		Assertions.assertTrue(vaild);

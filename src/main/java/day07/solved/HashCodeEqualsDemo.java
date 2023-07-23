@@ -49,9 +49,11 @@ public class HashCodeEqualsDemo {
 		// TODO Auto-generated method stub
 
         Employee emp1 = new Employee(23);
+
         Employee emp2 = new Employee(23);
- 
+        
         System.out.println("emp1.equals(emp2)--->>>" + emp1.hashCode());
+
         System.out.println("emp1.equals(emp2)--->>>" + emp2.hashCode());
         System.out.println("emp1.equals(emp2)--->>>" + emp1.equals(emp2));
  
