@@ -13,7 +13,9 @@ class Book1 {
 	String publisher;
 	
 	
-	public void printBookDetails() {
+	public void printBookDetails(String title) {
+		
+		this.title = title;
 		System.out.println("Title: " + title);
 		System.out.println("Author: " + author);
 		System.out.println("Price: " + price);
@@ -31,7 +33,7 @@ public class TestBook {
 		book1.publisher = "Penguin Books";
 //		book1.price = 400; // Will throw a compilation issue since its private
 		System.out.println("------------Book1 Details---------");
-		book1.printBookDetails();
+		book1.printBookDetails("hello");
 		
 		Book1 book2 = new Book1();
 		
@@ -39,10 +41,9 @@ public class TestBook {
 		book2.author = "JRR Tolkien";
 //		book2.price = 800;// Will throw a compilation issue since its private
 		System.out.println("------------Book2 Details---------");
-		book2.printBookDetails();
+		book2.printBookDetails("hkhklhfd");                        
 		
-		
-		
-		
+		 
 	}
-}
+	}
+		                                                                                                                                                                

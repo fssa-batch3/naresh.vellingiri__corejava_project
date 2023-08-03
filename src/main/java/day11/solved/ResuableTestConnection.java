@@ -17,11 +17,11 @@ public class ResuableTestConnection {
  
     public static Connection getConnection() {
          
+    	
         Connection connection  = null;
+        
         try
         {
-   
-         
              String url = "jdbc:mysql://localhost:3306/fssa_hacker";
              connection = DriverManager.getConnection(url,"root", "root");
          

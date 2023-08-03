@@ -7,16 +7,22 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 public class ConnectionUtil {
+	
+	public static void main(String[] args) {
+		
+		Connection con = getConnection();
+	}
 	 
     public static Connection getConnection()  {
  
         Connection con = null;
-        String url = "jdbc:mysql://localhost/fssa";
+        String url = "jdbc:mysql://aws.connect.psdb.cloud:3306/core_java_naresh";
         String userName = "root";
         String passWord = "123456";
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
             con = DriverManager.getConnection(url, userName, passWord);
+            System.out.println("Connection created");
         } catch (Exception e) {
             e.printStackTrace();        
             throw new RuntimeException("Unable to connect to the database");

@@ -5,6 +5,11 @@ public class Dog {
     private boolean hasDots;
     private String color;
 
+    // Constructor
+    public Dog(boolean hasDots, String color) {
+        this.hasDots = hasDots;
+        this.color = color;
+    }
 
     // Getters and setters
     public boolean hasDots() {
@@ -23,23 +28,28 @@ public class Dog {
         this.color = color;
     }
 
+     public String speak() {
+    	 return "woof";
+    }
+
+
     // Main method to create Dog objects
     public static void main(String[] args) {
         // Create two Dog objects
-        Dog dog1 = new Dog();
-        dog1.setColor("purple");
-        dog1.setHasDots(false);
-        Dog dog2 = new Dog();
-        dog2.setColor("blue");
-        dog2.setHasDots(true);
+        Dog dog1 = new Dog(true, "purple");
+        Dog dog2 = new Dog(true, "blue");
+        
+        dog1.speak();
 
         // Print the attributes of each Dog
         System.out.println("Dog 1:");
         System.out.println("Has Dots: " + dog1.hasDots());
         System.out.println("Color: " + dog1.getColor());
+				System.out.println("Speaks: " + dog1.speak());
 
         System.out.println("Dog 2:");
         System.out.println("Has Dots: " + dog2.hasDots());
         System.out.println("Color: " + dog2.getColor());
+				System.out.println("Speaks: " + dog2.speak());
     }
 }

@@ -58,6 +58,8 @@ public class CarDemo {
 		car2.speedUp(10);
 		car2.changeGear(2);
 		car2.speedUp(10);
+		car2.speedUp(-100);
+
 		car2.changeGear(3);
 		car2.printStates();
 	}
